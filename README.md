@@ -3,6 +3,8 @@ Department of Computer Engineering (CSE424)
 Akdeniz University
 Antalya, Turkey
 
+# 📝 Abstract
+This report presents the development and implementation of a crypto-lottery decentralized application (DApp) using Matic Blockchain and TypeScript. The DApp allows users to purchase lottery tickets using MATIC cryptocurrency and participate in regular lottery draws. The system leverages Solidity smart contracts deployed on the Matic Blockchain, with the frontend developed using Next.js and React.js. The integration with MetaMask provides secure wallet transactions, and TailwindCSS ensures a responsive and visually appealing user interface. The report discusses the system architecture, user journey, testing and quality assurance measures, and proposes future enhancements. The crypto-lottery DApp offers a seamless and transparent platform for users to engage in lottery activities while providing the admin with full control and commission earnings. The report highlights the technological stack, design decisions, and outlines the potential for further development and improvement in terms of additional cryptocurrency integrations, enhanced security measures, and scalability optimizations.
 
 # Project Login Page 
 
@@ -11,22 +13,6 @@ Antalya, Turkey
 # Admin Login
 
 ![image](https://github.com/KurtC0bainn/akdeniz-lotto-dapp/assets/79340463/8b632249-cd29-49a5-bdb6-87071ed3bf8e)
-
-# Buying Ticket
-
-![image](https://github.com/KurtC0bainn/akdeniz-lotto-dapp/assets/79340463/4a998ded-cd05-4a09-970b-6f9da3b45033)
-
-# User Login
-
-![image](https://github.com/KurtC0bainn/akdeniz-lotto-dapp/assets/79340463/8b8bc6ad-dc3f-42ce-a491-de8a002600b4)
-
-# All Transactions from Admin
-
-![image](https://github.com/KurtC0bainn/akdeniz-lotto-dapp/assets/79340463/d5ec95f1-10af-44e4-bb5e-9e111ba8f84f)
-
-
-# 📝 Abstract
-This report presents the development and implementation of a crypto-lottery decentralized application (DApp) using Matic Blockchain and TypeScript. The DApp allows users to purchase lottery tickets using MATIC cryptocurrency and participate in regular lottery draws. The system leverages Solidity smart contracts deployed on the Matic Blockchain, with the frontend developed using Next.js and React.js. The integration with MetaMask provides secure wallet transactions, and TailwindCSS ensures a responsive and visually appealing user interface. The report discusses the system architecture, user journey, testing and quality assurance measures, and proposes future enhancements. The crypto-lottery DApp offers a seamless and transparent platform for users to engage in lottery activities while providing the admin with full control and commission earnings. The report highlights the technological stack, design decisions, and outlines the potential for further development and improvement in terms of additional cryptocurrency integrations, enhanced security measures, and scalability optimizations.
 
 ## 🔸 I. INTRODUCTION
 ### 📌 A. Purpose
@@ -106,6 +92,18 @@ The DApp includes a login and logout feature integrated with MetaMask, allowing 
 - Withdraw Commission: The admin can withdraw the accumulated commission from the lottery by invoking the WithdrawCommission function. This transfers the total commission balance to the admin's address, providing a mechanism to earn revenue from ticket sales.
 - Restart Draw: In case the draw is completed or no tickets were purchased, the admin can restart the draw by executing the restartDraw function. This clears the existing tickets and sets a new expiration timestamp for the next draw.
 - Refund Lottery Ticket Charges: If the lottery expires and no winner is drawn, the admin can refund the purchased ticket charges to all participants. The RefundAll function iterates through the tickets array, transferring the ticket price back to each participant.
+
+# Buying Ticket
+
+![image](https://github.com/KurtC0bainn/akdeniz-lotto-dapp/assets/79340463/4a998ded-cd05-4a09-970b-6f9da3b45033)
+
+# User Login
+
+![image](https://github.com/KurtC0bainn/akdeniz-lotto-dapp/assets/79340463/8b8bc6ad-dc3f-42ce-a491-de8a002600b4)
+
+# All Transactions from Admin
+
+![image](https://github.com/KurtC0bainn/akdeniz-lotto-dapp/assets/79340463/d5ec95f1-10af-44e4-bb5e-9e111ba8f84f)
 
 ### 📌 C. Smart Contract Deployment on Matic Blockchain
 The smart contract is deployed on the Matic Blockchain using Thirdweb. This ensures the execution of the lottery logic on a secure and scalable blockchain network.
